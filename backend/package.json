@@ -1,0 +1,40 @@
+{
+  "name": "kino-backend",
+  "version": "1.0.0",
+  "description": "Kino CMS Backend - Legal Video Content Management System",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": ["cms", "video", "content", "management"],
+  "author": "lbsteps",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "jsonwebtoken": "^9.0.0",
+    "bcryptjs": "^2.4.3",
+    "axios": "^1.4.0",
+    "cors": "^2.8.5",
+    "express-validator": "^7.0.0",
+    "i18next": "^22.5.0",
+    "i18next-express-middleware": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.0.0",
+    "@types/jest": "^29.5.0",
+    "typescript": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "eslint": "^8.40.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0"
+  }
+}
